@@ -12,7 +12,7 @@ var TEST = process.env.NODE_ENV === 'test';
 var jsBundle = path.join('js', util.format('[name].%s.js', pkg.version));
 
 var entry = {
-  app: ['./app.jsx']
+  app: ['./scripts/app.jsx']
 };
 
 if (DEBUG) {
@@ -23,7 +23,7 @@ if (DEBUG) {
       pkg.config.devPort
     )
   );
-  entry.app.push('webpack/hot/dev-server');
+  entry.app.push('webpack/hot/only-dev-server');
 }
 
 var config = {
