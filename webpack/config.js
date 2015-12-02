@@ -43,7 +43,7 @@ var config = {
     loaders: loaders
   },
   postcss: [
-    autoprefixer
+    autoprefixer()
   ],
   plugins: plugins,
   resolve: {
@@ -55,6 +55,10 @@ var config = {
     noInfo: false,
     inline: true,
     stats: { colors: true }
+  },
+  stats: {
+    chunks: true,
+    chunkModules: true
   }
 };
 

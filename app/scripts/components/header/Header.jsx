@@ -1,16 +1,15 @@
 import React from 'react';
-
-var a = 2;
+import styles from './Header.scss';
 
 export default class Header extends React.Component {
     static displayName: 'Header';
 
     render() {
         return (
-            <div>
-                <div>Left</div>
-                <div>Button</div>
-                <div>Link</div>
+            <div className={styles.header}>
+                <button>Left</button>
+                <button>Button</button>
+                <button>Link</button>
             </div>
         );
     }

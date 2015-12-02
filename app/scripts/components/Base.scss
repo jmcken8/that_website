@@ -1,0 +1,24 @@
+.vert {
+    display: flex;
+    flex-direction: column;
+}
+
+div.wrapper {
+    @extend .vert;
+    height: 100%;
+}
+
+main.main {
+    flex: 1;
+    display: relative;
+    overflow: auto;
+}
+
+main.main > div {
+    flex: 1;
+    display: absolute;
+}
+
+main {
+    background: blue;
+}
