@@ -31,6 +31,8 @@
   },
   "homepage": "https://github.com/jmcken8/that_website#readme",
   "dependencies": {
+    "ampersand-model": "^6.0.2",
+    "ampersand-rest-collection": "^5.0.0",
     "history": "^1.13.1",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
